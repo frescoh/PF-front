@@ -1,0 +1,98 @@
+.sociales_login{    
+    background-color: orange;
+}
+.argentina_programa{
+    display: inline-block;
+    align-items: center;
+}
+.sociales{
+    text-align: right;
+}
+.perfil{
+    margin-left: 5%;
+    background-color: orange;
+    display: inline-flexbox;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.experiencia{
+    display: flexbox;
+    background-color: aqua;
+}
+.trabajo{
+    display: flexbox;
+    align-items: start;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px solid red;    
+    border-radius: black;
+    transition: green;
+}
+.trabajo img{
+    height: 40px;
+    opacity: 1;
+    
+}
+.voluntariado img{
+    height: 40px;
+    opacity: 1;
+}
+.educacion img{
+    height: 50px;
+}
+.cursos img{
+    height: 50px;
+}
+
+.progress-bar{
+    width: 90%;
+    min-width: 10%;
+
+}
+
+
+
+
+.circular .numero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+.circular .barra{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    -webkit-border-radius: 100%;
+    clip:rect(0px,100px,100px,50px);
+}
+.circulo .barra .progreso{
+   position: absolute; 
+   height: 100%;
+   width: 100%;
+   -webkit-border-radius: 100%;
+   clip:rect(0px,100px,100px,50px);
+   background-color: blue;
+}
+.circulo .barra .progreso, .dot span{
+    background: violet;
+    z-index: 1;
+    
+}
+.tarjetas{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
+    gap: 16px;
+}
