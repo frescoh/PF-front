@@ -1,6 +1,164 @@
-.sociales_login{    
-    background-color: orange;
+:root{
+    --per_skill:292.5;
 }
+
+body{
+    background-color: #e3edf7;
+}
+
+
+.percent-0{
+    --per_skill:450.0;
+}
+    
+.percent-5{
+    --per_skill:427.5;
+}
+
+.percent-10{
+    --per_skill:405.0;
+}
+
+.percent-15{
+    --per_skill:382.5;
+}
+
+.percent-20{
+    --per_skill:360.0;
+}
+
+.percent-25{
+    --per_skill:337.5;
+}
+
+.percent-30{
+    --per_skill:315.0;
+}
+
+.percent-35{
+    --per_skill:292.5;
+}
+
+.percent-40{
+    --per_skill:270.0;
+}
+
+.percent-45{
+    --per_skill:247.5;
+}
+
+.percent-50{
+    --per_skill:225.0;
+}
+
+.percent-55{
+    --per_skill:202.5;
+}
+
+.percent-60{
+    --per_skill:180.0;
+}
+
+.percent-65{
+    --per_skill:157.5;
+}
+
+.percent-70{
+    --per_skill:135.0;
+}
+
+.percent-75{
+    --per_skill:112.5;
+}
+
+.percent-80{
+    --per_skill:90.0;
+}
+
+.percent-85{
+    --per_skill:67.5;
+}
+
+.percent-90{
+    --per_skill:45.0;
+}
+
+.percent-95{
+    --per_skill:22.5;
+}
+
+.percent-100{
+    --per_skill:0.0;
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 50% ;
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center; /* Vertical Alignment*/
+    justify-content: center; /* Horizontal Alignment*/
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border-radius: 50%;
+}
+
+.skill{
+    width: 160px;
+}
+
+.una_skill{
+    position: relative;
+    width: 160px;    
+}
+
+.una_skill h3{
+    text-align: center;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim {
+    100%{
+        stroke-dashoffset:var(--per_skill);
+    }
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim 2s linear forwards;
+}
+
+.tarjetas{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
+    gap: 16px;
+}
+
 .argentina_programa{
     display: inline-block;
     align-items: center;
@@ -10,13 +168,11 @@
 }
 .perfil{
     margin-left: 5%;
-    background-color: orange;
     display: inline-flexbox;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .experiencia{
     display: flexbox;
-    background-color: aqua;
 }
 .trabajo{
     display: flexbox;
@@ -24,8 +180,6 @@
     margin-bottom: 1em;
     padding: 1em;
     border: 2px solid red;    
-    border-radius: black;
-    transition: green;
 }
 .trabajo img{
     height: 40px;
@@ -41,58 +195,4 @@
 }
 .cursos img{
     height: 50px;
-}
-
-.progress-bar{
-    width: 90%;
-    min-width: 10%;
-
-}
-
-
-
-
-.circular .numero{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 10;
-    font-size: 22px;
-    font-weight: 500;
-    color: white;
-}
-
-.circular .barra{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: white;
-    -webkit-border-radius: 100%;
-    clip:rect(0px,100px,100px,50px);
-}
-.circulo .barra .progreso{
-   position: absolute; 
-   height: 100%;
-   width: 100%;
-   -webkit-border-radius: 100%;
-   clip:rect(0px,100px,100px,50px);
-   background-color: blue;
-}
-.circulo .barra .progreso, .dot span{
-    background: violet;
-    z-index: 1;
-    
-}
-.tarjetas{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            150px,
-            1fr
-        )
-    );
-    gap: 16px;
 }

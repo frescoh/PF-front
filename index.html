@@ -52,7 +52,7 @@
     <section class="experiencia">
         <div class="container">
             <div class="row">
-                <h2>Experiencia laboral</h2>
+                <h3>Experiencia laboral</h3>
             </div>
         </div>
         <div class="container">
@@ -259,34 +259,105 @@
         </div>
     </section>
 
-    <section class="skills">
-        <article class="skill">
-            <p>nombre</p>
-            <p>porcentaje</p>
-            <img src="" alt="Logo">
-        </article>
-
+    <section id="skills">
+        <div class="container">
+            <h3>Skills</h3>
+            <ul class="tarjetas">
+       
+                <li class="skill">
+                    <div>
+                        <div class="una_skill percent-50">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="valor">50%</div>
+                                </div>   
+                            </div>
+                            <h3>HTML</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset-"0%" stop-color="#DA22FF" /> 
+                                        <stop offset="100%" stop-color="#9733EE" /> 
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                            
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="skill">
+                    <div>
+                        <div class="una_skill percent-50">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="valor">50%</div>
+                                </div>   
+                            </div>
+                            <h3>HTML</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset-"0%" stop-color="#DA22FF" /> 
+                                        <stop offset="100%" stop-color="#9733EE" /> 
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                            
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        <script>
+            let skills= document.getElementById("skills");
+            let valores_skills = skills.getElementsByClassName("valor");
+            for(let div_skill of valores_skills){
+                graficar_porcentaje(div_skill);
+            }      
+        </script>
     </section>
-    <section class="idiomas">
-        <article class="idioma">
-            <p>Idioma</p>
-            <p>porcentaje</p>
-        </article>
 
-    </section>
-    <h1>Aqui comienzan las barras</h1>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar">
-                        <span class="sr-only">100%</span>
+    <section id="idiomas">
+        <div class="container">
+            <h3>Idiomas</h3>
+            <ul class="tarjetas">
+            <li class="skill">
+                <div>
+                    <div class="una_skill percent-50">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="valor">50%</div>
+                            </div>   
+                        </div>
+                        <h3>Ingles</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset-"0%" stop-color="#DA22FF" /> 
+                                    <stop offset="100%" stop-color="#9733EE" /> 
+                                </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                        
                     </div>
                 </div>
+                
+            </li>
+            </ul>
 
-            </div>
+            <script>
+                let odiomas= document.getElementById("idioma");
+                let idiomas_percents= idiomas.getElementsByClassName("valor");
+                for(let div_skill of idiomas_percents){
+                    graficar_porcentaje(div_skill);
+                }      
+            </script>
         </div>
-    </div>
+    </section>
 </body>
 </html>
